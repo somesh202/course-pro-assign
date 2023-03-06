@@ -1,10 +1,11 @@
 <template>
   <Navbar />
-  <section class="bg-green-400 h-140 lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
+  <section v-reveal-effect class="bg-green-500 h-140 lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
     <div class="rounded-lg bg-green-400 bg-blend-multiply hidden lg:block">
       <img
+      v-animate-onscroll="'animated flip'"
         src="@/assets/img1.jpg"
-        class="flex float-right w-1/2 relative bg-gradient-to-tr h-100"
+        class="flex opacity-75 float-right w-1/2 relative bg-gradient-to-tr h-100"
       />
     </div>
     <div class="lg:w-1/2 w-full">
@@ -29,7 +30,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-[url('@/assets/bglayer2.svg')] lg:h-64 -py-24">
+  <section class="bg-[url('@/assets/bglayer2.svg')] lg:h-64 -py-24" >
     <ul class="flex items-center lg:flex-row flex-col">
       <li>
         <h3 class="text-3xl mr-32 mt-16 ml-32 p-4 font-bold text-gray-500">
@@ -260,11 +261,14 @@
 </template>
 
 <script>
+
 import CourseCard from "./components/CourseCard.vue";
 import EarnerCard from "./components/EarnerCard.vue";
 import Navbar from "./components/NavBar.vue";
 import TestimonialCard from "./components/TestimonialCard.vue";
+
 export default {
+  
   name: "App",
   data: function () {
     return {
@@ -274,9 +278,12 @@ export default {
       sub: null,
       phone: null,
       mssg: null,
+      
     };
+    
   },
   methods: {
+    
     checkForm: function (e) {
       this.errors = [];
 
@@ -321,6 +328,7 @@ export default {
     Navbar,
     TestimonialCard,
   },
+  
 };
 </script>
 

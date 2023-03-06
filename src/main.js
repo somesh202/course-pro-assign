@@ -1,5 +1,9 @@
-import { createApp } from 'vue'
+import { createApp, } from 'vue'
 import App from './App.vue'
 import './index.css'
 
-createApp(App).mount('#app')
+import VueAnimateOnScroll from 'vue-animate-onscroll'
+ 
+// Using ScrollReveal's default configuration
+
+createApp(App).use(VueAnimateOnScroll).mount('#app')
