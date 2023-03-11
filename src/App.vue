@@ -1,12 +1,12 @@
 <template>
   <Navbar />
   <div>
-  <section v-reveal-effect class="bg-green-500 2xl:h-[75vh] h-auto lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
+  <section v-reveal-effect class="bg-green-500 2xl:h-[72vh] h-[105vh] lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
     
       <img
       v-animate-onscroll="'animated flip'"
         src="@/assets/pexels-olia-danilevich-5088179.jpg"
-        class="flex float-right w-[50vw] bg-green-400 opcaity-50 h-[80vh] h-auto mix-blend-multiply hidden lg:block"
+        class="flex float-right w-[50vw] bg-green-400 opcaity-50 xl:h-[94vh] 2xl:h-[63vh] mix-blend-multiply hidden lg:block"
       />
     
     <div class="lg:w-1/2 w-full">
@@ -17,13 +17,13 @@
           Anytime, Anywhere Learn on your Schedule from any device.
         </h2>
         <p
-          class="lg:m-10 m-auto lg:text-left text-center text-gray-900 text-xl italic"
+          class="lg:m-10 m-auto lg:text-left text-center text-gray-900 text-lg italic"
           >We Believe everyone has the capcity to be creative
           <b class="text-white">Course Pro</b> is a place where people develop
           their own potential</p
         >
         <button
-          class="lg:m-8 m-auto bg-gray-800 text-white italic text-lg p-4 rounded-lg mt-8 lg:block flex items-center"
+          class="lg:m-8 m-auto bg-gray-800 text-white italic text-md p-4 rounded-lg lg:block flex items-center"
         >
           Let's get started
         </button>
@@ -158,7 +158,7 @@
     <h2 class="lg:text-3xl text-2xl text-center m-auto font-bold lg:w-96 mt-6 capitalize">
       Reach Out with any question you have
     </h2>
-    <div class="m-auto p-16">
+    <div class="m-auto p-4">
       <div class="flex float-left">
         <h2 class="text-3xl font-bold text-gray-700">Contact Information</h2>
         <ul class="flex flex-col justify-between float-left mt-20 -ml-72">
@@ -199,7 +199,7 @@
       </h2>
 
       <form
-        class="flex justify-between flex-wrap m-auto p-8 w-full"
+        class="flex justify-between flex-wrap m-auto p-3 w-full"
         @submit="checkForm"
         action="https://vuejs.org/"
         method="post"
