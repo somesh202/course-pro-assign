@@ -1,63 +1,63 @@
 <template>
   <Navbar />
-  <section v-reveal-effect class="bg-green-500 h-140 lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
-    <div class="rounded-lg bg-green-400 bg-blend-multiply hidden lg:block">
+  <div>
+  <section v-reveal-effect class="bg-green-500 2xl:h-[75vh] h-auto lg:-mb-16 overflow-hidden m-auto flex flex-col lg:block">
+    
       <img
       v-animate-onscroll="'animated flip'"
-        src="@/assets/img1.jpg"
-        class="flex opacity-75 float-right w-1/2 relative bg-gradient-to-tr h-100"
+        src="@/assets/pexels-olia-danilevich-5088179.jpg"
+        class="flex float-right w-[50vw] bg-green-400 opcaity-50 h-[80vh] h-auto mix-blend-multiply hidden lg:block"
       />
-    </div>
+    
     <div class="lg:w-1/2 w-full">
       <div class="p-14 lg:mb-30 m-auto">
         <h2
-          class="lg:m-8 m-auto text-white text-center lg:text-left lg:text-6xl text-4xl space-y-1 font-sans"
+          class="lg:m-8 m-auto text-white text-center lg:text-left lg:text-5xl text-4xl space-y-1 font-sans font-bold"
         >
           Anytime, Anywhere Learn on your Schedule from any device.
         </h2>
-        <span
-          class="lg:m-10 m-auto lg:text-left text-center text-black text-xl italic font-600"
+        <p
+          class="lg:m-10 m-auto lg:text-left text-center text-gray-900 text-xl italic"
           >We Believe everyone has the capcity to be creative
           <b class="text-white">Course Pro</b> is a place where people develop
-          their own potential</span
+          their own potential</p
         >
-        <br />
         <button
-          class="lg:m-8 bg-black text-white italic text-lg p-4 rounded-lg mt-8 mr-4"
+          class="lg:m-8 m-auto bg-gray-800 text-white italic text-lg p-4 rounded-lg mt-8 lg:block flex items-center"
         >
           Let's get started
         </button>
       </div>
     </div>
   </section>
-  <section class="bg-[url('@/assets/bglayer2.svg')] lg:h-64 -py-24" >
-    <ul class="flex items-center lg:flex-row flex-col">
+  <section class="bg-[url('@/assets/bglayer2.svg')] lg:h-64 p-16 m-auto text-center" >
+    <ul class="grid lg:grid-cols-3 grid-cols-1">
       <li>
-        <h3 class="text-3xl mr-32 mt-16 ml-32 p-4 font-bold text-gray-500">
+        <h3 class="text-3xl p-4 font-bold text-gray-500">
           Total Students
         </h3>
-        <span class="text-black mr-32 mt-16 ml-32 p-4 text-5xl font-bold py-3"
+        <span class="text-black text-5xl font-bold py-3"
           >5140</span
         >
-        <div class="w-32 h-1 rounded-lg mr-32 mt-4 ml-36 bg-green-400"></div>
+        <div class="w-32 h-1 rounded-lg m-auto mt-3 bg-green-400"></div>
       </li>
       <li>
-        <h3 class="text-3xl mr-32 mt-16 ml-32 p-4 font-bold text-gray-500">
+        <h3 class="text-3xl p-4 font-bold text-gray-500">
           Partners
         </h3>
-        <span class="text-black mr-32 mt-16 ml-36 text-5xl font-bold py-3"
+        <span class="text-black text-5xl font-bold py-3"
           >4123</span
         >
-        <div class="w-28 h-1 rounded-lg mr-32 mt-4 ml-36 bg-green-400"></div>
+        <div class="w-28 h-1 rounded-lg m-auto mt-3 bg-green-400"></div>
       </li>
       <li>
-        <h3 class="text-3xl mr-32 mt-16 ml-32 p-4 font-bold text-gray-500">
+        <h3 class="text-3xl  p-4 font-bold text-gray-500">
           Affiliate Distribution
         </h3>
-        <span class="text-black mr-32 mt-16 ml-36 text-5xl font-bold py-3"
+        <span class="text-black text-5xl font-bold py-3"
           >4.18 Lac</span
         >
-        <div class="w-48 h-1 rounded-lg mr-32 mt-4 ml-36 bg-green-400"></div>
+        <div class="w-48 h-1 rounded-lg m-auto mt-3 bg-green-400"></div>
       </li>
     </ul>
   </section>
@@ -65,7 +65,7 @@
     <h5 class="text-2xl text-green-600 italic">Courses</h5>
     <h2 class="text-3xl font-bold mt-4">Our Most Popular Courses</h2>
 
-    <div class="flex lg:p-10 p-3 flex-wrap items-center justify-between">
+    <div class="flex flex-wrap items-center justify-between mt-8">
       <CourseCard
         class=""
         :imageSource="require('@/assets/download.jpg')"
@@ -79,7 +79,7 @@
       />
       <CourseCard
         :imageSource="require('@/assets/9bda416d7f1e25c7cb961fa1e5b95925.webp')"
-        desc="Ultimate Business Intelligence Analyst A to Z Course 2021"
+        desc="Adobe Photoshop Training: From Beginner to Pro"
         count="477595"
         time="11 hr 20 mins"
         lectures="44 Lectures"
@@ -89,7 +89,7 @@
       />
       <CourseCard
         :imageSource="require('@/assets/GettyImages-1211395020.png')"
-        desc="Ultimate Business Intelligence Analyst A to Z Course 2021"
+        desc="Social Media Marketing - A to Z Content Marketing class 2021"
         count="477595"
         time="11 hr 20 mins"
         lectures="44 Lectures"
@@ -103,7 +103,7 @@
     <h2 class="text-3xl text-left font-bold lg:w-96 mt-6 capitalize">
       Transformng your ideas into reality
     </h2>
-    <div class="flex justify-between lg:flex-row flex-col mt-8">
+    <div class="flex justify-between lg:flex-row flex-wrap sm:flex-col mt-8">
       <EarnerCard
         :imgPath="require('@/assets/luis-villasmil-hh3ViD0r0Rc-unsplash.png')"
         amount="8,00,000"
@@ -258,6 +258,7 @@
       </form>
     </div>
   </section>
+</div>
 </template>
 
 <script>
